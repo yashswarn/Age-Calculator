@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    background: linear-gradient(135deg,#4203a9,#90bafc);
+    height: 100vh;
+    color: #fff;
+    padding: 10px;
+}
+
+.age-calculator{
+    margin-left: 100px;
+}
+
+.heading-content{
+    margin-bottom: 25px;
+}
+
+.heading2{
+    color: yellow;
+    padding-top: 10px;
+}
+
+.calculator-box{
+    height: 50px;
+    width: 328px;
+    background: #ffffff84;
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    border-radius:5px;
+    margin-bottom: 30px;
+}
+
+.date{
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#btn{
+    width: 80px;
+    height: 28px;
+    background: yellow;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    margin-left: 6px;
+}
+  
+#result {
+    padding-left: 20px;
+}
+
+
+@media(max-width:720px){
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .calculator-box{
+        width:250px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        height: 100px;
+        gap: 10px;
+    }
+   
+    .age-calculator{
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #result p{
+        text-align: center;
+        padding-left: none;
+    }
+
+
+    .heading-content{
+        text-align: center;
+    }
+}
